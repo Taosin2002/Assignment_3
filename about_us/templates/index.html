@@ -1,0 +1,20 @@
+{% block content %}
+  <h1>This is the home page</h1>
+
+  <div class="row" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+    {% for i in categories %}
+      <div class="col-md-4" style="flex: 0 0 23%;">
+        <div class="card mb-4" style="width: 100%;">
+          <img src="{{ i.strCategoryThumb }}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5>{{ i.idCategory }}</h5>
+            <h5 class="card-title">{{ i.strCategory }}</h5>
+            <p class="card-text">{{ i.strCategoryDescription|truncatewords:10 }}</p>
+            <a href="{{ i.idMeal }}" class="btn btn-primary"style="color: red;">ORDER</a> 
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
+

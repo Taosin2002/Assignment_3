@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <h1>This is the About page</h1>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+    
+    p {
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>About Us</h1>
+    </header>
+
+    <section>
+      <h2>Our Story</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusamus natus velit dolorum, alias explicabo accusantium dignissimos error placeat at quibusdam, est necessitatibus iusto, unde ducimus. Consequatur dolorem dicta blanditiis mollitia impedit. Fugit optio, debitis dolore harum nihil enim aliquid, aut culpa eius libero mollitia facere tenetur sequi ipsum ducimus voluptatum officia? Voluptate ipsa earum accusamus eveniet minima inventore sint similique ullam unde corporis? Velit, ab! Natus adipisci, libero eaque placeat ab delectus ipsum magni repudiandae! Cupiditate natus possimus error soluta dicta accusamus, reiciendis fugiat at magnam nam adipisci, nesciunt debitis incidunt quis veritatis laborum totam temporibus earum praesentium fugit.
+      </p>
+    </section>
+
+    <section>
+      <h2>Our Mission</h2>
+      <p>
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, animi fuga vitae a nam officiis eveniet? Asperiores, veniam optio. Ipsa facilis illo sequi possimus sapiente adipisci dicta reprehenderit, eos rerum dolores alias, voluptate excepturi! Tempore corrupti, neque nisi doloremque laborum molestiae qui beatae explicabo repudiandae officia, aliquam rerum omnis dolores pariatur voluptate modi vitae iusto soluta culpa nobis? Et alias dolorum eaque ducimus distinctio natus, ut, facere possimus, illo voluptas maxime laudantium omnis nam magni aut exercitationem accusamus labore consequatur ab quasi sapiente placeat consequuntur aliquam incidunt! Pariatur mollitia neque necessitatibus blanditiis natus quod sit numquam! Explicabo magnam dolorem iste.
+      </p>
+    </section>
+
+    <section>
+      <h2>Meet the Team</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel distinctio commodi provident quas consectetur? Vero aliquid ipsa eveniet veniam quas, in explicabo consectetur nostrum quia exercitationem ratione? Quo harum pariatur incidunt vitae. Sunt voluptas, aliquam veritatis nihil, corporis sequi obcaecati, est cupiditate iste praesentium hic dolore ab voluptatem non aperiam.
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+    </footer>
+  </div>
+  <img src="{% static 'images/resturent.jpeg' %}" />
+{% endblock %}
